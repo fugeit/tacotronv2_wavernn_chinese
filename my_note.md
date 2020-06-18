@@ -21,7 +21,8 @@ IdentityFile ~/.ssh/id_rsa
 Port 443
 
 
-pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple datasets
+pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple pinyin
+pip install infolog
 
 pip install torch torchvision -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
 
@@ -37,10 +38,14 @@ Max audio timesteps length: 171600
 python tacotron_train.py
 
 + [Python3中出现Non-UTF-8 code starting with '\xe7'的错误](https://blog.csdn.net/chen6s/article/details/86539726)
-
++ [Missing DESCRIPTION.rst #134](https://github.com/RealTimeWeb/datasets/issues/134)
 
 rm -f ./.git/index.lock
 
 git rm --cached "logs-Tacotron-2/*"
   
   '/private/var/folders/lq/7b2grg555m3fhgk1xxzlgrcc0000gn/T/pip-install-a6lsu2wr/datasets/DESCRIPTION.rst'
+
+/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/env/lib/python3.6/site-packages/datasets-0.0.9
+
+python wavernn_preprocess.py
