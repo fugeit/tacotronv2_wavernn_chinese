@@ -49,3 +49,9 @@ git rm --cached "logs-Tacotron-2/*"
 /Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/env/lib/python3.6/site-packages/datasets-0.0.9
 
 python wavernn_preprocess.py
+
+pip freeze > requirements.txt
+Love2021
+
+pip install tensorflow-gpu==1.13.2 -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com/simple
+pip install torch torchvision -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com/simple

@@ -5,11 +5,16 @@ import tensorflow as tf
 hparams = tf.contrib.training.HParams(
 	# Comma-separated list of cleaners to run on text prior to training and eval. For non-English
 	# text, you may want to use "basic_cleaners" or "transliteration_cleaners".
-    dataset = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset/bznsyp',
-    base_dir = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset',
+	# mac
+    # dataset = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset/bznsyp',
+    # base_dir = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset',
+    # feat_out_dir = 'training_data_v1',
+    # tacotron_input = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset/bznsyp/training_data_v1/train.txt',
+    # 
+	dataset = '/media/psdz/data3/zhrct_data/biaobei/bznsyp',
+    base_dir = '/media/psdz/data3/zhrct_data/biaobei/',
     feat_out_dir = 'training_data_v1',
-    tacotron_input = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset/bznsyp/training_data_v1/train.txt',
-
+    tacotron_input = '/media/psdz/data3/zhrct_data/biaobei/bznsyp/training_data_v1/train.txt',
 	#If you only have 1 GPU or want to use only one GPU, please set num_gpus=0 and specify the GPU idx on run. example:
 		#expample 1 GPU of index 2 (train on "/gpu2" only): CUDA_VISIBLE_DEVICES=2 python train.py --model='Tacotron' --hparams='tacotron_gpu_start_idx=2'
 	#If you want to train on multiple GPUs, simply specify the number of GPUs available, and the idx of the first GPU to use. example:
