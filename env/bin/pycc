@@ -1,0 +1,3 @@
+#!/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/env/bin/python
+from numba.pycc import main
+main()

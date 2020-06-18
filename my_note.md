@@ -21,7 +21,7 @@ IdentityFile ~/.ssh/id_rsa
 Port 443
 
 
-pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple torch torchvision
+pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple datasets
 
 pip install torch torchvision -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
 
@@ -40,4 +40,7 @@ python tacotron_train.py
 
 
 rm -f ./.git/index.lock
-+ 
+
+git rm --cached "logs-Tacotron-2/*"
+  
+  '/private/var/folders/lq/7b2grg555m3fhgk1xxzlgrcc0000gn/T/pip-install-a6lsu2wr/datasets/DESCRIPTION.rst'

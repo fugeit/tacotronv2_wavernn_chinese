@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
+# os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 import wave
 from datetime import datetime
@@ -124,7 +124,7 @@ if __name__ == '__main__':
     synth = Synthesizer()
     cwd = os.getcwd()
 
-    ckpt_path = os.path.join(cwd, 'logs-Tacotron-2/taco_pretrained')
+    ckpt_path = os.path.join(cwd, 'logs-Tacotron-2_old/taco_pretrained')
     print(cwd, ckpt_path)
     checkpoint_path = tf.train.get_checkpoint_state(ckpt_path).model_checkpoint_path
 
@@ -135,8 +135,9 @@ if __name__ == '__main__':
     if os.path.exists(out_dir):
         shutil.rmtree(out_dir)
     os.makedirs(out_dir)
-    
-    base_path = '/home/spurs/tts/dataset/bznsyp/training_data_v1'
+    # /Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/bznsyp/training_data_v1
+    # /home/spurs/tts/dataset/bznsyp/training_data_v1
+    base_path = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/bznsyp/training_data_v1'
 
     cnt = 10
     res = open(os.path.join(cwd, 'wavernn_training_data.txt'), 'w', encoding='utf-8')
