@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/logs-Tacotron-2_old/taco_pretrained/tacotron_model.ckpt-206500"
+all_model_checkpoint_paths: "/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/logs-Tacotron-2_old/taco_pretrained/tacotron_model.ckpt-206500"

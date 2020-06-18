@@ -24,7 +24,7 @@
 
 
 ### TacotronV2训练数据集预处理
-> 修改[hparams.py](https://github.com/lturing/tacotronv2_wavernn_chinese/blob/master/tacotron_hparams.py)中[标贝数据集](https://www.data-baker.com/open_source.html)的路径
+> 修改[tacotron_hparams.py](https://github.com/lturing/tacotronv2_wavernn_chinese/blob/master/tacotron_hparams.py)中[标贝数据集](https://www.data-baker.com/open_source.html)的路径
 ```python
 dataset = '/home/spurs/tts/dataset/bznsyp', #标贝数据集的根目录，其wav文件在 dataset/bznsyp下
 base_dir = '/home/spurs/tts/dataset',

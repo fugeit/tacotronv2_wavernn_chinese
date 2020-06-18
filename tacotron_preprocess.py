@@ -92,6 +92,7 @@ def main():
     parser.add_argument('--base_dir', default=hparams.base_dir)
     parser.add_argument('--hparams', default='',
         help='Hyperparameter overrides as a comma-separated list of name=value pairs')
+    # /Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/bznsyp/000001-010000.txt 
     parser.add_argument('--dataset', default='bznsyp')
     parser.add_argument('--language', default='zh')
     parser.add_argument('--voice', default='female')

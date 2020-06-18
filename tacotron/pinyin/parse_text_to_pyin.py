@@ -236,8 +236,8 @@ def get_pyin(text, tone=False):
     return ' '.join(res), text
             
 if __name__ == '__main__':
-    text = '大写字母用于随机变量，而小写字母用于随机变量的具体值或标量函数。'
-    text = '如果打穿地球，那么从一头到另一头会发生什么？'
+    # text = '大写字母用于随机变量，而小写字母用于随机变量的具体值或标量函数。'
+    text = 'hello world 如果打穿地球1234214，那么从一头到另一头会发生什么？'
     pyin, txt = get_pyin(text)
     print(pyin)
                 

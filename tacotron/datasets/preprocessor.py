@@ -29,7 +29,7 @@ def build_from_path_v1(hparams, input_dirs, out_dir, n_jobs=12, tqdm=lambda x: x
     # optimization purposes and it can be omited
     executor = ProcessPoolExecutor(max_workers=n_jobs)
     futures = []
-    wav_path = '/home/spurs/tts/dataset/bznsyp/bznsyp'
+    wav_path = '/Users/ccs/Desktop/myRepo/tacotronv2_wavernn_chinese/dataset/bznsyp/Wave'
     input_file = os.path.join(input_dirs[0], '000001-010000.txt')
     with open(input_file, 'r', encoding='utf-8') as f:
         flag = 0 

@@ -19,3 +19,25 @@ Hostname ssh.github.com
 PreferredAuthentications publickey  
 IdentityFile ~/.ssh/id_rsa  
 Port 443
+
+
+pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple torch torchvision
+
+pip install torch torchvision -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
+
+pip install -r requirements.txt -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
+ 
+python tacotron_preprocess.py
+
+Max input length (text chars): 37
+Max mel frames length: 624
+Max audio timesteps length: 171600
+
+
+python tacotron_train.py
+
++ [Python3中出现Non-UTF-8 code starting with '\xe7'的错误](https://blog.csdn.net/chen6s/article/details/86539726)
+
+
+rm -f ./.git/index.lock
++ 
