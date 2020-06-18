@@ -21,7 +21,7 @@ IdentityFile ~/.ssh/id_rsa
 Port 443
 
 
-pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple pinyin
+pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple tqdm
 pip install infolog
 
 pip install torch torchvision -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
