@@ -21,10 +21,10 @@ IdentityFile ~/.ssh/id_rsa
 Port 443
 
 
-pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple tqdm
+pip install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple inflect
 pip install infolog
 
-pip install torch torchvision -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
+pip install torch torchvision -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple sounddevice
 
 pip install -r requirements.txt -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple
  
