@@ -105,11 +105,11 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env
 .venv
-env/
+# env/
 venv/
-ENV/
+# ENV/
 env.bak/
 venv.bak/
 
@@ -133,3 +133,11 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+dataset/*
+*.wav
+logs_wavernn/*
+logs-Tacotron-2/*
+env/lib/*
+.DS_Store 
+*.swp 
+__pycache__
