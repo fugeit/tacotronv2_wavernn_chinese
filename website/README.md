@@ -36,3 +36,7 @@ python run.py
 
 
 
+docker run -p 8500:8500 --mount type=bind,source=/home/chenchangshu/tacotronv2_wavernn_chinese/Tacotron-2_forward_attention/export,target=/models/tacotron_fw -t --entrypoint=tensorflow_model_server tensorflow/serving --port=8500 --model_name=tacotron_fw --model_base_path=/models/tacotron_fw &
+
+Love2021
+file_system_storage_path_source.cc:267] No versions of servable tacotron_fw found under base path /models/tacotron_fw

@@ -9,7 +9,7 @@ tone = {'#2': 0, '#1': 0, '#4': 0, '#3': 0} # '#1', '#2', '#3', '#4'
 
 
 hz = {}
-with open('/home/spurs/tts/dataset/bznsyp/pinyin.txt', 'r', encoding='utf-8') as f:
+with open('/home/chenchangshu/tacotronv2_wavernn_chinese/tacotron/pinyin/pinyin.txt', 'r', encoding='utf-8') as f:
     i = 0 
     for line in f:
         if i < 2:
@@ -24,7 +24,8 @@ with open('/home/spurs/tts/dataset/bznsyp/pinyin.txt', 'r', encoding='utf-8') as
         hz[word] = py
 
 phrase = {}
-with open('/home/spurs/tts/dataset/bznsyp/large_pinyin.txt', 'r', encoding='utf-8') as f:
+# with open('/home/spurs/tts/dataset/bznsyp/large_pinyin.txt', 'r', encoding='utf-8') as f:
+with open('/home/chenchangshu/tacotronv2_wavernn_chinese/tacotron/pinyin/large_pinyin.txt', 'r', encoding='utf-8') as f:
     i = 0 
     for line in f:
         if i < 2:
@@ -226,8 +227,10 @@ def get_pyin(text, tone=False):
 
            
 if __name__ == '__main__':
-    with open('/home/spurs/tts/dataset/bznsyp/training_data/train.txt', 'r', encoding='utf-8') as f:
-        with open('/home/spurs/tts/dataset/bznsyp/training_data/train_1.txt', 'w', encoding='utf-8') as rs:
+    # with open('/home/spurs/tts/dataset/bznsyp/training_data/train.txt', 'r', encoding='utf-8') as f:
+    #     with open('/home/spurs/tts/dataset/bznsyp/training_data/train_1.txt', 'w', encoding='utf-8') as rs:
+    with open('/home/chenchangshu/tacotronv2_wavernn_chinese/bznsyp/training_data_v1/train.txt', 'r', encoding='utf-8') as f:
+        with open('/home/chenchangshu/tacotronv2_wavernn_chinese/bznsyp/training_data_v1/wavernn_training_data.txt', 'w', encoding='utf-8') as rs:
             for line in f:
                 line = line.strip().split('|')
                 text = line[-2].strip()

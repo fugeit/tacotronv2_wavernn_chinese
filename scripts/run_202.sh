@@ -17,3 +17,4 @@ Love2021
 
     conda activate /home/chenchangshu/.conda/envs/tacotronv2_wavernn_chinese
 tmux a -t 1
+tmux a -t 2
